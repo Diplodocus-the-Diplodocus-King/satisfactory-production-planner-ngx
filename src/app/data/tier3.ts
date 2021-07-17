@@ -1,0 +1,487 @@
+export default [
+    {
+        "part": "heavy modular frame",
+        "recipes":[
+            {
+                "part": "heavy modular frame",
+                "input1": "modular frame",
+                "rate1": 10,
+                "input2": "steel pipe",
+                "rate2": 30,
+                "input3": "encased industrial beam",
+                "rate3": 10,
+                "input4": "screw",
+                "rate4": 200,
+                "output": 2,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "heavy flexible frame",
+                "input1": "modular frame",
+                "rate1": 18.75,
+                "input2": "rubber",
+                "rate2": 75,
+                "input3": "encased industrial beam",
+                "rate3": 11.25,
+                "input4": "screw",
+                "rate4": 390,
+                "output": 3.75,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "heavy encased frame",
+                "input1": "modular frame",
+                "rate1": 7.5,
+                "input2": "steel pipe",
+                "rate2": 33.75,
+                "input3": "encased industrial beam",
+                "rate3": 9.375,
+                "input4": "concrete",
+                "rate4": 20.625,
+                "output": 2.8125,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "computer",
+        "recipes":[
+            {
+                "part": "computer",
+                "input1": "circuit board",
+                "rate1": 25,
+                "input2": "cable",
+                "rate2": 22.5,
+                "input3": "plastic",
+                "rate3": 45,
+                "input4": "screw",
+                "rate4": 130,
+                "output": 2.5,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "crystal computer",
+                "input1": "circuit board",
+                "rate1": 7.5,
+                "input2": "crystal oscillator",
+                "rate2": 2.8125,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 2.8125,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "caterium computer",
+                "input1": "circuit board",
+                "rate1": 26.25,
+                "input2": "quickwire",
+                "rate2": 105,
+                "input3": "rubber",
+                "rate3": 45,
+                "input4": null,
+                "rate4": null,
+                "output": 3.75,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "crystal oscillator",
+        "recipes":[
+            {
+                "part": "crystal oscillator",
+                "input1": "quartz crystal",
+                "rate1": 18,
+                "input2": "cable",
+                "rate2": 14,
+                "input3": "reinforced iron plate",
+                "rate3": 2.5,
+                "input4": null,
+                "rate4": null,
+                "output": 1,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "insulated crystal oscillator",
+                "input1": "quartz crystal",
+                "rate1": 18.75,
+                "input2": "rubber",
+                "rate2": 13.125,
+                "input3": "ai limiter",
+                "rate3": 1.875,
+                "input4": null,
+                "rate4": null,
+                "output": 1.875,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "high speed connector",
+        "recipes":[
+            {
+                "part": "high speed connector",
+                "input1": "quickwire",
+                "rate1": 210,
+                "input2": "cable",
+                "rate2": 37.5,
+                "input3": "circuit board",
+                "rate3": 3.75,
+                "input4": null,
+                "rate4": null,
+                "output": 3.75,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "silicone high speed connector",
+                "input1": "quickwire",
+                "rate1": 90,
+                "input2": "silica",
+                "rate2": 37.5,
+                "input3": "circuit board",
+                "rate3": 3,
+                "input4": null,
+                "rate4": null,
+                "output": 3,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "turbo motor",
+        "recipes":[
+            {
+                "part": "turbo motor",
+                "input1": "cooling system",
+                "rate1": 7.5,
+                "input2": "motor",
+                "rate2": 7.5,
+                "input3": "rubber",
+                "rate3": 45,
+                "input4": "radio control unit",
+                "rate4": 3.75,
+                "output": 1.875,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "turbo electric motor",
+                "input1": "rotor",
+                "rate1": 6.5625,
+                "input2": "motor",
+                "rate2": 6.5625,
+                "input3": "radio control unit",
+                "rate3": 8.4375,
+                "input4": "electromagnetic control rod",
+                "rate4": 4.6875,
+                "output": 2.8125,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "turbo pressure motor",
+                "input1": "stator",
+                "rate1": 15,
+                "input2": "motor",
+                "rate2": 7.5,
+                "input3": "pressure conversion cube",
+                "rate3": 1.875,
+                "input4": "packaged nitrogen gas",
+                "rate4": 45,
+                "output": 3.75,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "radio control unit",
+        "recipes":[
+            {
+                "part": "radio control unit",
+                "input1": "aluminium casing",
+                "rate1": 40,
+                "input2": "computer",
+                "rate2": 1.25,
+                "input3": "crystal oscillator",
+                "rate3": 1.25,
+                "input4": null,
+                "rate4": null,
+                "output": 2.5,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "radio control system",
+                "input1": "aluminium casing",
+                "rate1": 90,
+                "input2": "circuit board",
+                "rate2": 15,
+                "input3": "crystal oscillator",
+                "rate3": 1.5,
+                "input4": "rubber",
+                "rate4": 45,
+                "output": 4.5,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "radio connection unit",
+                "input1": "heat sink",
+                "rate1": 15,
+                "input2": "high speed connector",
+                "rate2": 7.5,
+                "input3": "quartz crystal",
+                "rate3": 45,
+                "input4": null,
+                "rate4": null,
+                "output": 3.75,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "super computer",
+        "recipes":[
+            {
+                "part": "super computer",
+                "input1": "computer",
+                "rate1": 3.75,
+                "input2": "high speed connector",
+                "rate2": 5.625,
+                "input3": "ai limiter",
+                "rate3": 3.75,
+                "input4": "plastic",
+                "rate4": 52.5,
+                "output": 1.875,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "OC super computer",
+                "input1": "radio control unit",
+                "rate1": 9,
+                "input2": "cooling system",
+                "rate2": 9,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 3,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "super state computer",
+                "input1": "computer",
+                "rate1": 3.6,
+                "input2": "electromagnetic control rod",
+                "rate2": 2.4,
+                "input3": "battery",
+                "rate3": 24,
+                "input4": "copper wire",
+                "rate4": 54,
+                "output": 2.4,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "battery",
+        "recipes":[
+            {
+                "part": "battery",
+                "input1": "aluminium casing",
+                "rate1": 20,
+                "input2": "alumina solution",
+                "rate2": 40,
+                "input3": "sulphuric acid",
+                "rate3": 50,
+                "output": 20,
+                "byProduct": "water",
+                "output2": 30,
+                "power": 75,
+                "building": "blender"
+            },
+            {
+                "part": "classic battery",
+                "input1": "alclad aluminium sheet",
+                "rate1": 52.5,
+                "input2": "copper wire",
+                "rate2": 90,
+                "input3": "sulphur",
+                "rate3": 45,
+                "input4": "plastic",
+                "rate4": 60,
+                "output": 30,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "cooling system",
+        "recipes":[
+            {
+                "part": "cooling system",
+                "input1": "heat sink",
+                "rate1": 12,
+                "input2": "rubber",
+                "rate2": 12,
+                "input3": "nitrogen gas",
+                "rate3": 150,
+                "input4": "water",
+                "rate4": 30,
+                "output": 6,
+                "power": 75,
+                "building": "blender"
+            },
+            {
+                "part": "cooling device",
+                "input1": "heat sink",
+                "rate1": 9.375,
+                "input2": "motor",
+                "rate2": 1.875,
+                "input3": "nitrogen gas",
+                "rate3": 45,
+                "input4": null,
+                "rate4": null,
+                "output": 3.75,
+                "power": 75,
+                "building": "blender"
+            }
+        ]
+    },
+    {
+        "part": "electromagnetic control rod",
+        "recipes":[
+            {
+                "part": "electromagnetic control rod",
+                "input1": "stator",
+                "rate1": 6,
+                "input2": "ai limiter",
+                "rate2": 4,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 4,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "electromagnetic connection rod",
+                "input1": "stator",
+                "rate1": 8,
+                "input2": "high speed connector",
+                "rate2": 4,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 8,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "fused modular frame",
+        "recipes":[
+            {
+                "part": "fused modular frame",
+                "input1": "heavy modular frame",
+                "rate1": 1.5,
+                "input2": "aluminium casing",
+                "rate2": 75,
+                "input3": "nitrogen gas",
+                "rate3": 37.5,
+                "input4": null,
+                "rate4": null,
+                "output": 1.5,
+                "power": 75,
+                "building": "blender"
+            },
+            {
+                "part": "heat fused frame",
+                "input1": "heavy modular frame",
+                "rate1": 3,
+                "input2": "aluminium ingot",
+                "rate2": 150,
+                "input3": "nitric acid",
+                "rate3": 24,
+                "input4": "fuel",
+                "rate4": 30,
+                "output": 3,
+                "power": 75,
+                "building": "blender"
+            }
+        ]
+    },
+    {
+        "part": "pressure conversion cube",
+        "recipes":[
+            {
+                "part": "pressure conversion cube",
+                "input1": "fused modular frame",
+                "rate1": 1,
+                "input2": "radio control unit",
+                "rate2": 2,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 1,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "beacon",
+        "recipes":[
+            {
+                "part": "beacon",
+                "input1": "iron plate",
+                "rate1": 22.5,
+                "input2": "iron rod",
+                "rate2": 7.5,
+                "input3": "copper wire",
+                "rate3": 112.5,
+                "input4": "cable",
+                "rate4": 15,
+                "output": 7.5,
+                "power": 55,
+                "building": "manufacturer"
+            },
+            {
+                "part": "crystal beacon",
+                "input1": "steel beam",
+                "rate1": 2,
+                "input2": "steel pipe",
+                "rate2": 8,
+                "input3": "crystal oscillator",
+                "rate3": 0.5,
+                "input4": null,
+                "rate4": null,
+                "output": 10,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    }
+]

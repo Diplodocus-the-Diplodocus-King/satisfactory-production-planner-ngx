@@ -1,0 +1,343 @@
+export default [
+    {
+        "part": "iron ingot",
+        "recipes":[
+            {
+                "part": "iron ingot",
+                "input1": "iron ore",
+                "rate1": 30,
+                "input2": null,
+                "rate2": null,
+                "output": 30,
+                "power": 4,
+                "building": "smelter"
+            },
+            {
+                "part": "pure iron ingot",
+                "input1": "iron ore",
+                "rate1": 35,
+                "input2": "water",
+                "rate2": 20,
+                "output": 65,
+                "power": 30,
+                "building": "refinery"
+            },
+            {
+                "part": "iron alloy ingot",
+                "input1": "iron ore",
+                "rate1": 20,
+                "input2": "copper ore",
+                "rate2": 20,
+                "output": 50,
+                "power": 16,
+                "building": "foundry"
+            }
+        ]
+    },
+    {
+        "part": "copper ingot",
+        "recipes":[
+            {
+                "part": "copper ingot",
+                "input1": "copper ore",
+                "rate1": 30,
+                "input2": null,
+                "rate2": null,
+                "output": 30,
+                "power": 4,
+                "building": "smelter"
+            },
+            {
+                "part": "pure copper ingot",
+                "input1": "copper ore",
+                "rate1": 15,
+                "input2": "water",
+                "rate2": 10,
+                "output": 37.5,
+                "power": 30,
+                "building": "refinery"
+            },
+            {
+                "part": "copper alloy ingot",
+                "input1": "copper ore",
+                "rate1": 50,
+                "input2": "iron ore",
+                "rate2": 25,
+                "output": 100,
+                "power": 16,
+                "building": "foundry"
+            }
+        ]
+    },
+    {
+        "part": "steel ingot",
+        "recipes":[
+            {
+                "part": "steel ingot",
+                "input1": "iron ore",
+                "rate1": 45,
+                "input2": "coal",
+                "rate2": 45,
+                "output": 45,
+                "power": 16,
+                "building": "foundry"
+            },
+            {
+                "part": "coke steel ingot",
+                "input1": "iron ore",
+                "rate1": 75,
+                "input2": "coke",
+                "rate2": 75,
+                "output": 100,
+                "power": 16,
+                "building": "foundry"
+            },
+            {
+                "part": "compacted steel ingot",
+                "input1": "iron ore",
+                "rate1": 22.5,
+                "input2": "compacted coal",
+                "rate2": 11.25,
+                "output": 37.5,
+                "power": 16,
+                "building": "foundry"
+            },
+            {
+                "part": "solid steel ingot",
+                "input1": "iron ingot",
+                "rate1": 40,
+                "input2": "coal",
+                "rate2": 40,
+                "output": 60,
+                "power": 16,
+                "building": "foundry"
+            }
+        ]
+    },
+    {
+        "part": "caterium ingot",
+        "recipes":[
+            {
+                "part": "caterium ingot",
+                "input1": "caterium ore",
+                "rate1": 45,
+                "input2": null,
+                "rate2": null,
+                "output": 15,
+                "power": 4,
+                "building": "smelter"
+            },
+            {
+                "part": "pure caterium ingot",
+                "input1": "caterium ore",
+                "rate1": 24,
+                "input2": "water",
+                "rate2": 24,
+                "output": 12,
+                "power": 30,
+                "building": "refinery"
+            }
+        ]
+    },
+    {
+        "part": "quartz crystal",
+        "recipes":[
+            {
+                "part": "quartz crystal",
+                "input1": "raw quartz",
+                "rate1": 37.5,
+                "input2": null,
+                "rate2": null,
+                "output": 22.5,
+                "power": 4,
+                "building": "constructor"
+            },
+            {
+                "part": "pure quartz crystal",
+                "input1": "raw quartz",
+                "rate1": 67.5,
+                "input2": "water",
+                "rate2": 37.5,
+                "output": 52.5,
+                "power": 30,
+                "building": "refinery"
+            }
+        ]
+    },
+    {
+        "part": "silica",
+        "recipes":[
+            {
+                "part": "silica",
+                "input1": "raw quartz",
+                "rate1": 22.5,
+                "input2": null,
+                "rate2": null,
+                "output": 37.5,
+                "power": 4,
+                "building": "constructor"
+            },
+            {
+                "part": "cheap silica",
+                "input1": "raw quartz",
+                "rate1": 11.25,
+                "input2": "limestone",
+                "rate2": 18.75,
+                "output": 26.25,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "black powder",
+        "recipes":[
+            {
+                "part": "black powder",
+                "input1": "coal",
+                "rate1": 7.5,
+                "input2": "sulphur",
+                "rate2": 15,
+                "output": 7.5,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "gun powder",
+                "input1": "compacted coal",
+                "rate1": 3.75,
+                "input2": "sulphur",
+                "rate2": 7.5,
+                "output": 15,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "compacted coal",
+        "recipes":[
+            {
+                "part": "compacted coal",
+                "input1": "coal",
+                "rate1": 25,
+                "input2": "sulphur",
+                "rate2": 25,
+                "output": 25,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "alumina solution",
+        "recipes":[
+            {
+                "part": "alumina solution",
+                "input1": "bauxite",
+                "rate1": 120,
+                "input2": "water",
+                "rate2": 180,
+                "output": 120,
+                "byProduct": "silica",
+                "output2": 50,
+                "power": 30,
+                "building": "refinery"
+            },
+            {
+                "part": "unpackaged alumina solution",
+                "input1": "packaged alumina solution",
+                "rate1": 120,
+                "input2": null,
+                "rate2": null,
+                "output": 120,
+                "byProduct": "empty canister",
+                "output2": 120,
+                "power": 30,
+                "building": "packager"
+            },
+            {
+                "part": "sloppy alumina",
+                "input1": "bauxite",
+                "rate1": 200,
+                "input2": "water",
+                "rate2": 200,
+                "output": 240,
+                "power": 30,
+                "building": "refinery"
+            }
+        ]
+    },
+    {
+        "part": "packaged alumina solution",
+        "recipes":[
+            {
+                "part": "packaged alumina solution",
+                "input1": "alumina solution",
+                "rate1": 120,
+                "input2": "empty canister",
+                "rate2": 120,
+                "output": 120,
+                "power": 10,
+                "building": "packager"
+            }
+        ]
+    },
+    {
+        "part": "sulphuric acid",
+        "recipes":[
+            {
+                "part": "sulphuric acid",
+                "input1": "sulphur",
+                "rate1": 50,
+                "input2": "water",
+                "rate2": 50,
+                "output": 100,
+                "power": 30,
+                "building": "refinery"
+            },
+            {
+                "part": "unpackaged sulphuric acid",
+                "input1": "packaged sulphuric acid",
+                "rate1": 60,
+                "input2": null,
+                "rate2": null,
+                "output": 60,
+                "byProduct": "empty canister",
+                "output2": 60,
+                "power": 10,
+                "building": "packager"
+            }
+        ]
+    }, 
+    {
+        "part": "packaged sulphuric acid",
+        "recipes":[
+            {
+                "part": "packaged sulphuric acid",
+                "input1": "sulphuric acid",
+                "rate1": 40,
+                "input2": "empty canister",
+                "rate2": 40,
+                "output": 40,
+                "power": 10,
+                "building": "packager"
+            }
+        ]
+    }, 
+    {
+        "part": "packaged nitrogen gas",
+        "recipes":[
+            {
+                "part": "packaged nitrogen gas",
+                "input1": "nitrogen gas",
+                "rate1": 240,
+                "input2": "empty fluid tank",
+                "rate2": 60,
+                "output": 60,
+                "power": 10,
+                "building": "packager"
+            }
+        ]
+    }
+]

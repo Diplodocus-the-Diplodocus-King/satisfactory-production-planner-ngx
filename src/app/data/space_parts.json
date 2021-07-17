@@ -1,0 +1,215 @@
+[
+    {
+        "part": "smart plating",
+        "recipes":[
+            {
+                "part": "smart plating",
+                "input1": "reinforced iron plate",
+                "rate1": 2,
+                "input2": "rotor",
+                "rate2": 2,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 2,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "plastic smart plating",
+                "input1": "reinforced iron plate",
+                "rate1": 2.5,
+                "input2": "rotor",
+                "rate2": 2.5,
+                "input3": "plastic",
+                "rate3": 7.5,
+                "input4": null,
+                "rate4": null,
+                "output": 5,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "automated wiring",
+        "recipes":[
+            {
+                "part": "automated wiring",
+                "input1": "stator",
+                "rate1": 2.5,
+                "input2": "cable",
+                "rate2": 50,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 2.5,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "high speed wiring",
+                "input1": "stator",
+                "rate1": 3.75,
+                "input2": "copper wire",
+                "rate2": 75,
+                "input3": "high speed connector",
+                "rate3": 1.875,
+                "input4": null,
+                "rate4": null,
+                "output": 7.5,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "versatile framework",
+        "recipes":[
+            {
+                "part": "versatile framework",
+                "input1": "modular frame",
+                "rate1": 2.5,
+                "input2": "steel beam",
+                "rate2": 30,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 5,
+                "power": 15,
+                "building": "assembler"
+            },
+            {
+                "part": "flexible framework",
+                "input1": "modular frame",
+                "rate1": 3.75,
+                "input2": "steel beam",
+                "rate2": 22.5,
+                "input3": "rubber",
+                "rate3": 30,
+                "input4": null,
+                "rate4": null,
+                "output": 7.5,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "modular engine",
+        "recipes":[
+            {
+                "part": "modular engine",
+                "input1": "motor",
+                "rate1": 2,
+                "input2": "rubber",
+                "rate2": 15,
+                "input3": "smart plating",
+                "rate3": 2,
+                "input4": null,
+                "rate4": null,
+                "output": 1,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "adaptive control unit",
+        "recipes":[
+            {
+                "part": "adaptive control unit",
+                "input1": "automated wiring",
+                "rate1": 7.5,
+                "input2": "circuit board",
+                "rate2": 5,
+                "input3": "heavy modular frame",
+                "rate3": 1,
+                "input4": "computer",
+                "rate4": 1,
+                "output": 1,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "assembly director system",
+        "recipes":[
+            {
+                "part": "assembly director system",
+                "input1": "adaptive control unit",
+                "rate1": 1.5,
+                "input2": "super computer",
+                "rate2": 0.75,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 0.75,
+                "power": 15,
+                "building": "assembler"
+            }
+        ]
+    },
+    {
+        "part": "magnetic field generator",
+        "recipes":[
+            {
+                "part": "magnetic field generator",
+                "input1": "versatile framework",
+                "rate1": 2.5,
+                "input2": "electromagnetic control rod",
+                "rate2": 1,
+                "input3": "battery",
+                "rate3": 5,
+                "input4": null,
+                "rate4": null,
+                "output": 1,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    },
+    {
+        "part": "nuclear pasta",
+        "recipes":[
+            {
+                "part": "nuclear pasta",
+                "input1": "copper powder",
+                "rate1": 100,
+                "input2": "pressure conversion cube",
+                "rate2": 0.5,
+                "input3": null,
+                "rate3": null,
+                "input4": null,
+                "rate4": null,
+                "output": 0.5,
+                "power": 1500,
+                "building": "particle accelerator"
+            }
+        ]
+    },
+    {
+        "part": "thermal propulsion rocket",
+        "recipes":[
+            {
+                "part": "thermal propulsion rocket",
+                "input1": "modular engine",
+                "rate1": 2.5,
+                "input2": "turbo motor",
+                "rate2": 1,
+                "input3": "cooling system",
+                "rate3": 3,
+                "input4": "fused modular frame",
+                "rate4": 1,
+                "output": 1,
+                "power": 55,
+                "building": "manufacturer"
+            }
+        ]
+    }
+]
