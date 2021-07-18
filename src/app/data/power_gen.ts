@@ -1,4 +1,4 @@
-[
+export default [
     {
         "part": "power",
         "recipes": [

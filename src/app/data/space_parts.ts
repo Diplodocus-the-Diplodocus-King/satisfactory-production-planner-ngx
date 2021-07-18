@@ -1,4 +1,4 @@
-[
+export default [
     {
         "part": "smart plating",
         "recipes":[

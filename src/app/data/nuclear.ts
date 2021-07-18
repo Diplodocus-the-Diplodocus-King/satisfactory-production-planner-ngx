@@ -1,4 +1,4 @@
-[
+export default [
     {
         "part": "encased uranium cell",
         "recipes":[

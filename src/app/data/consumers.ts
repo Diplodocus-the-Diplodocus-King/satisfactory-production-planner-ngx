@@ -1,4 +1,4 @@
-[
+export default [
     {
         "building": "pump",
         "power": 4
