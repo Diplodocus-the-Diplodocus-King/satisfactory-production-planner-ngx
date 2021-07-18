@@ -38,6 +38,11 @@ export class HubComponent implements OnInit {
 
   }
 
+  getRecipes(part: string): any[] {
+    const recipes: any[] = this.hubService.getRecipes(part);
+    return recipes;
+  }
+
   setMaximise(){
     if(!this.productionItemForm.controls.toMaximise.value){
       this.productionItemForm.controls.quantity.disable();
@@ -79,8 +84,7 @@ export class HubComponent implements OnInit {
   }
 
   removeItem(part: any){
-    this.production = this.production.filter(item => item.part !== part.part );
-    console.log(this.production)
+    this.production = this.production.filter(item => item.part !== part.part);
   }
 
 }

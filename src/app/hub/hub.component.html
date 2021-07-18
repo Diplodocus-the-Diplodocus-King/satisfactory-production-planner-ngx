@@ -60,3 +60,21 @@
         </div>
     </div>
 </div>
+<div class="card card-custom">
+    <div class="card-header px-4">
+        <div class="card-title">
+            <h3 class="card-label">Recipes</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="grid align-items-center">
+            <div *ngFor="let part of parts" class="row">
+                <div *ngFor="let recipe of getRecipes(part)" class="form-group p-0 col-1">
+                    <label class="mx-3">{{ recipe.part }}</label>
+                    <input type="checkbox">
+                    <input *ngIf="false" type="number">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
