@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HubService } from '../hub.service';
+import { Part } from '../models/parts.model';
 
 @Component({
   selector: 'app-hub',
@@ -16,7 +17,8 @@ export class HubComponent implements OnInit {
   forSink: boolean = false;
   forPower: boolean = false;
 
-  parts: string[];
+  partNames: string[];
+  parts: Part[];
   production: any[] = [];
 
   constructor(
@@ -31,7 +33,19 @@ export class HubComponent implements OnInit {
         forPower: [this.forPower]
       });
 
+      this.partNames = this.hubService.getAllPartNames();
       this.parts = this.hubService.getAllParts();
+
+      this.parts.forEach(part => {
+        let recipes = part.recipes.map(recipe => {
+          return {
+            ...recipe,
+            isChecked: false,
+            ratio: 0,
+           }
+        });
+        part.recipes = recipes;
+      });
     }
 
   ngOnInit(): void {
@@ -83,8 +97,22 @@ export class HubComponent implements OnInit {
     });
   }
 
+  selectRecipe(part: Part, recipe: any): void{
+    part.recipes.forEach(itemRecipe => {
+      if(itemRecipe.part === recipe.part){
+        recipe.isChecked = !recipe.isChecked;
+        recipe.ratio = recipe.isChecked ? 1 : 0;
+      }
+    });
+    console.log(this.parts)
+  }
+
   removeItem(part: any){
     this.production = this.production.filter(item => item.part !== part.part);
+  }
+
+  getImageUrl(part: string): string {
+    return './assets/images/' + part.replace(/ /g, '_') + '.png';
   }
 
 }

@@ -67,6 +67,10 @@ export class HubService {
   }
 
   public getAllParts(){
+    return this.allParts;
+  }
+
+  public getAllPartNames(){
     return this.allPartNames;
   }
 
