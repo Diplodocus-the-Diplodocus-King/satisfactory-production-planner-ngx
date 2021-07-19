@@ -21,6 +21,8 @@ export class HubComponent implements OnInit {
   parts: Part[];
   production: any[] = [];
 
+  isShowRecipes: boolean = false;
+
   constructor(
     private hubService: HubService,
     private fb: FormBuilder,
@@ -104,7 +106,6 @@ export class HubComponent implements OnInit {
         recipe.ratio = recipe.isChecked ? 1 : 0;
       }
     });
-    console.log(this.parts)
   }
 
   removeItem(part: any){
@@ -113,6 +114,33 @@ export class HubComponent implements OnInit {
 
   getImageUrl(part: string): string {
     return './assets/images/' + part.replace(/ /g, '_') + '.png';
+  }
+
+  showRecipes(){
+    this.isShowRecipes = !this.isShowRecipes;
+  }
+
+  submit(){
+    const selectedRecipes = this.filterRecipes();
+    this.sortMaximise();
+
+    this.hubService.calcDemand(this.production, selectedRecipes)
+  }
+
+  filterRecipes(): Part[] {
+    let selectedRecipes = [...this.hubService.getAllParts()];
+
+    selectedRecipes.forEach((part: Part) => {
+      part.recipes = part.recipes.filter(recipe => recipe.isChecked);
+    });
+
+    return selectedRecipes;
+  }
+
+  sortMaximise(){
+    const maximisePart = this.production.filter(part => part.maximise);
+    this.production = this.production.filter(part => !part.maximise);
+    this.production.push(...maximisePart);
   }
 
 }

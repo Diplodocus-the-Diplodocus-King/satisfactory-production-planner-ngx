@@ -3,6 +3,14 @@
         <div class="card-title">
             <h3 class="card-label">Select Production Items</h3>
         </div>
+        <div class="card-toolbar float-right">
+            <button type="sumbit" class="btn btn-sm btn-info m-1" (click)="showRecipes()">
+                Recipes
+            </button>
+            <button type="sumbit" class="btn btn-sm btn-icon btn-success" (click)="submit()">
+                Submit
+            </button>
+        </div>
     </div>
     <div class="card-body">
         <table *ngIf="production?.length" class="table">
@@ -60,7 +68,7 @@
         </div>
     </div>
 </div>
-<div class="card card-custom">
+<div *ngIf="isShowRecipes" class="card card-custom">
     <div class="card-header px-4">
         <div class="card-title">
             <h3 class="card-label">Recipes</h3>
@@ -70,15 +78,17 @@
         <div class="grid align-items-center">
             <div class="row">
                 <div *ngFor="let part of parts" class="col-2">
-                    <div class="d-flex align-items-center my-1">
-                        <img [src]="getImageUrl(part.part)" class="img-fluid" style="width: 15%;">
-                        <h3 class="text-capitalize font-weight-bold text-info mx-2">{{ part.part }}</h3>
-                    </div>
-                    <div class="form-group">
-                        <div *ngFor="let recipe of part.recipes" class="p-0 m-1">
-                            <button type="button" class="btn btn-sm btn-outline-warning text-capitalize" style="width: 100%" (click)="selectRecipe(part, recipe)">{{ recipe.part }}
-                                <input *ngIf="recipe.isChecked" type="number" class="float-right ml-2" max="1" min="0" [value]="recipe.ratio">
-                            </button>
+                    <div *ngIf="part.recipes.length">
+                        <div class="d-flex align-items-center my-1">
+                            <img [src]="getImageUrl(part.part)" class="img-fluid" style="width: 15%;">
+                            <h3 class="text-capitalize font-weight-bold text-info mx-2">{{ part.part }}</h3>
+                        </div>
+                        <div class="form-group">
+                            <div *ngFor="let recipe of part.recipes" class="p-0 m-1">
+                                <button type="button" class="btn btn-sm btn-outline-warning text-capitalize" style="width: 100%" (click)="selectRecipe(part, recipe)">{{ recipe.part }}
+                                    <input *ngIf="recipe.isChecked" type="number" class="float-right ml-2" max="1" min="0" [value]="recipe.ratio">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
