@@ -19,7 +19,7 @@ export class HubComponent implements OnInit {
 
   partNames: string[];
   parts: Part[];
-  production: any[] = [];
+  production: any[];
 
   isShowRecipes: boolean = false;
 
@@ -90,6 +90,10 @@ export class HubComponent implements OnInit {
     this.forSink = this.productionItemForm.controls.forSink.value;
     this.forPower = this.productionItemForm.controls.forPower.value;
 
+    if(!this.production){
+      this.production = [];
+    }
+
     this.production.push({
       part: this.item,
       quantity: this.quantity,
@@ -97,6 +101,7 @@ export class HubComponent implements OnInit {
       sink: this.forSink,
       power: this.forPower
     });
+    console.log(this.production)
   }
 
   selectRecipe(part: Part, recipe: any): void{
@@ -109,6 +114,7 @@ export class HubComponent implements OnInit {
   }
 
   removeItem(part: any){
+    console.log('this shouldnt be called')
     this.production = this.production.filter(item => item.part !== part.part);
   }
 
@@ -120,11 +126,13 @@ export class HubComponent implements OnInit {
     this.isShowRecipes = !this.isShowRecipes;
   }
 
-  submit(){
+  onSubmit(event: Event){
+    event.preventDefault();
+    console.log(this.production)
     const selectedRecipes = this.filterRecipes();
-    this.sortMaximise();
-
-    this.hubService.calcDemand(this.production, selectedRecipes)
+    // this.sortMaximise();
+    console.log(this.production)
+    this.hubService.calcDemand(this.production, selectedRecipes);
   }
 
   filterRecipes(): Part[] {
@@ -137,10 +145,10 @@ export class HubComponent implements OnInit {
     return selectedRecipes;
   }
 
-  sortMaximise(){
-    const maximisePart = this.production.filter(part => part.maximise);
-    this.production = this.production.filter(part => !part.maximise);
-    this.production.push(...maximisePart);
-  }
+  // sortMaximise(){
+  //   const maximisePart = this.production.filter(part => part.maximise);
+  //   this.production = this.production.filter(part => !part.maximise);
+  //   this.production.push(maximisePart[0]);
+  // }
 
 }

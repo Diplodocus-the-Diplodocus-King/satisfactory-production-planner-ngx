@@ -91,13 +91,15 @@ export class HubService {
     }
   }
 
-  public calcDemand(productionArray: any[], partsArray: Part[]){
-    console.log(productionArray, partsArray)
-    while(productionArray.length){
-      let workingArray = productionArray[0];
-      productionArray.shift();
+  public calcDemand(production: any[], selectedRecipes: Part[]){
+    let productionArray = [...production];
+    let partsArray = [...selectedRecipes];
 
-      while(workingArray.length){ // add ores to parts
+    while(productionArray.length){
+      let workingArray = [productionArray[0]];
+      productionArray.shift();
+      
+      while(workingArray.length){ 
         let currentRecipe = workingArray[0];
         workingArray.shift();
 
@@ -153,11 +155,9 @@ export class HubService {
           }
         });
       }
-
-      console.log(workingArray, partsArray)
-      return;
-
     }
+    console.log(partsArray)
+    return;
   }
   
 }
