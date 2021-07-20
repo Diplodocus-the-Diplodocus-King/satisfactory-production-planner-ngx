@@ -6,6 +6,7 @@ import tier2 from './data/tier2';
 import tier3 from './data/tier3';
 import spaceParts from './data/space_parts';
 import nuclear from './data/nuclear';
+import resourceLimits from './data/resource_limits';
 import { Part } from './models/parts.model';
 
 @Injectable({
@@ -50,6 +51,10 @@ export class HubService {
     return nuclear;
   }
 
+  public getResourceLimits(){
+    return resourceLimits;
+  }
+
   initAllParts(){
     return [
       ...this.getOres(),
@@ -91,7 +96,21 @@ export class HubService {
     }
   }
 
-  public calcDemand(production: any[], selectedRecipes: Part[]){
+  
+  filterRecipes(parts: Part[]): Part[] {
+    let selectedRecipes = [...parts];
+
+    selectedRecipes.forEach((part: Part) => {
+      part.recipes = part.recipes.filter(recipe => recipe.isChecked);
+    });
+
+    return selectedRecipes;
+  }
+
+  public calcDemand(production: any[], parts: Part[]){
+
+    const selectedRecipes = this.filterRecipes(parts);
+    console.log(production)
     let productionArray = [...production];
     let partsArray = [...selectedRecipes];
 
@@ -114,7 +133,9 @@ export class HubService {
             part.demand += currentRecipe.quantity;
 
             part.recipes.forEach(recipe => {
-              recipe.buildings = (part.demand*recipe.ratio) / recipe.output;
+              recipe.demand = part.demand*recipe.ratio;
+              recipe.buildings = recipe.demand / recipe.output;
+              recipe.totalProduction = recipe.output*recipe.buildings;
               recipe.totalPower = recipe.buildings*recipe.power;
 
               if(recipe.input1){
@@ -156,8 +177,7 @@ export class HubService {
         });
       }
     }
-    console.log(partsArray)
-    return;
+    return partsArray;
   }
   
 }

@@ -23,6 +23,20 @@ export class HubComponent implements OnInit {
 
   isShowRecipes: boolean = false;
 
+  result: Part[];
+  resourceUsage: any = {
+    iron_ore: 0,
+    copper_ore: 0,
+    limestone: 0,
+    coal: 0,
+    crude_oil: 0,
+    caterium_ore: 0,
+    bauxite: 0,
+    raw_quartz: 0,
+    sulphur: 0,
+    uranium: 0
+  }
+
   constructor(
     private hubService: HubService,
     private fb: FormBuilder,
@@ -101,7 +115,6 @@ export class HubComponent implements OnInit {
       sink: this.forSink,
       power: this.forPower
     });
-    console.log(this.production)
   }
 
   selectRecipe(part: Part, recipe: any): void{
@@ -126,23 +139,23 @@ export class HubComponent implements OnInit {
     this.isShowRecipes = !this.isShowRecipes;
   }
 
-  onSubmit(event: Event){
-    event.preventDefault();
-    console.log(this.production)
-    const selectedRecipes = this.filterRecipes();
-    // this.sortMaximise();
-    console.log(this.production)
-    this.hubService.calcDemand(this.production, selectedRecipes);
-  }
+  onSubmit(){
+    this.result = this.hubService.calcDemand(this.production, this.parts);
 
-  filterRecipes(): Part[] {
-    let selectedRecipes = [...this.hubService.getAllParts()];
+    const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'sulphur', 'uranium', 'water'];
+    const resourceLimits = this.hubService.getResourceLimits();
 
-    selectedRecipes.forEach((part: Part) => {
-      part.recipes = part.recipes.filter(recipe => recipe.isChecked);
+    console.log('result', this.result);
+    
+    this.result.forEach(part => {
+      if(baseResources.includes(part.part)){
+        const key: string = part.part.replace(/ /g, '_');
+        console.log(key)
+        this.resourceUsage[key] = part.demand;
+        console.log(this.resourceUsage)
+      }
     });
-
-    return selectedRecipes;
+    return;
   }
 
   // sortMaximise(){

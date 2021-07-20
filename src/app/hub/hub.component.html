@@ -7,7 +7,7 @@
             <button class="btn btn-sm btn-info m-1" (click)="showRecipes()">
                 Recipes
             </button>
-            <button class="btn btn-sm btn-success" (click)="onSubmit($event)">
+            <button class="btn btn-sm btn-success" (click)="onSubmit()">
                 Submit
             </button>
         </div>
@@ -94,5 +94,66 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div *ngIf="result" class="card card-custom">
+    <div class="card-header px-4">
+        <div class="card-title">
+            <h3 class="card-label">Results</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <table *ngIf="resourceUsage" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Iron Ore</th>
+                    <th scope="col">Copper Ore</th>
+                    <th scope="col">Limestone</th>
+                    <th scope="col">Coal</th>
+                    <th scope="col">Caterium Ore</th>
+                    <th scope="col">Crude Oil</th>
+                    <th scope="col">Raw Quartz</th>
+                    <th scope="col">Sulphur</th>
+                    <th scope="col">Bauxite</th>
+                    <th scope="col">Uranium</th>
+                    <th scope="col">Water</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">{{ resourceUsage.iron_ore }}</th>
+                    <th scope="col">{{ resourceUsage.copper_ore }}</th>
+                    <th scope="col">{{ resourceUsage.limestone }}</th>
+                    <th scope="col">{{ resourceUsage.coal }}</th>
+                    <th scope="col">{{ resourceUsage.caterium_ore }}</th>
+                    <th scope="col">{{ resourceUsage.crude_oil }}</th>
+                    <th scope="col">{{ resourceUsage.raw_quartz }}</th>
+                    <th scope="col">{{ resourceUsage.sulphur }}</th>
+                    <th scope="col">{{ resourceUsage.bauxite }}</th>
+                    <th scope="col">{{ resourceUsage.uranium }}</th>
+                    <th scope="col">{{ resourceUsage.water }}</th>
+                </tr>
+            </tbody>
+        </table>
+        <table *ngIf="result?.length" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Demand</th>
+                    <th scope="col">Production</th>
+                    <th scope="col">Buildings</th>
+                    <th scope="col">Power</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let part of result">
+                <tr *ngFor="let recipe of part.recipes">
+                    <td>{{recipe.part}}</td>
+                    <td>{{recipe.demand}}</td>
+                    <td>{{recipe.totalProduction}}</td>
+                    <td>{{recipe.buildings}}</td>
+                    <td>{{recipe.totalPower}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
