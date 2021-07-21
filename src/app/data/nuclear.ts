@@ -177,6 +177,7 @@ export default [
     },
     {
         "part": "plutonium fuel rod",
+        "sinkPoints": 153184,
         "recipes":[
             {
                 "part": "plutonium fuel rod",

@@ -115,9 +115,15 @@ export class HubComponent implements OnInit {
       sink: this.forSink,
       power: this.forPower
     });
+    console.log(this.production)
   }
 
-  selectRecipe(part: Part, recipe: any): void{
+  selectRecipe(event: Event, part: Part, recipe: any): void{
+
+    if(event.target instanceof HTMLInputElement){
+      return;
+    }
+
     part.recipes.forEach(itemRecipe => {
       if(itemRecipe.part === recipe.part){
         recipe.isChecked = !recipe.isChecked;

@@ -85,8 +85,8 @@
                         </div>
                         <div class="form-group">
                             <div *ngFor="let recipe of part.recipes" class="p-0 m-1">
-                                <button type="button" class="btn btn-sm btn-outline-warning text-capitalize" style="width: 100%" (click)="selectRecipe(part, recipe)">{{ recipe.part }}
-                                    <input *ngIf="recipe.isChecked" type="number" class="float-right ml-2" max="1" min="0" [value]="recipe.ratio">
+                                <button type="button" class="btn btn-sm btn-outline-warning text-capitalize" style="width: 100%" (click)="selectRecipe($event, part, recipe)">{{ recipe.part }}
+                                    <input *ngIf="recipe.isChecked" type="number" class="float-right ml-2" max="1" min="0" step="0.1" [value]="recipe.ratio">
                                 </button>
                             </div>
                         </div>

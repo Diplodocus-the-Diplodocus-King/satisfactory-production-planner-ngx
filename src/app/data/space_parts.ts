@@ -1,6 +1,7 @@
 export default [
     {
         "part": "smart plating",
+        "sinkPoints": 520,
         "recipes":[
             {
                 "part": "smart plating",
@@ -34,6 +35,7 @@ export default [
     },
     {
         "part": "automated wiring",
+        "sinkPoints": 1440,
         "recipes":[
             {
                 "part": "automated wiring",
@@ -67,6 +69,7 @@ export default [
     },
     {
         "part": "versatile framework",
+        "sinkPoints": 1176,
         "recipes":[
             {
                 "part": "versatile framework",
@@ -100,6 +103,7 @@ export default [
     },
     {
         "part": "modular engine",
+        "sinkPoints": 9960,
         "recipes":[
             {
                 "part": "modular engine",
@@ -119,6 +123,7 @@ export default [
     },
     {
         "part": "adaptive control unit",
+        "sinkPoints": 86120,
         "recipes":[
             {
                 "part": "adaptive control unit",
@@ -138,6 +143,7 @@ export default [
     },
     {
         "part": "assembly director system",
+        "sinkPoints": 543632,
         "recipes":[
             {
                 "part": "assembly director system",
@@ -157,6 +163,7 @@ export default [
     },
     {
         "part": "magnetic field generator",
+        "sinkPoints": 15650,
         "recipes":[
             {
                 "part": "magnetic field generator",
@@ -170,12 +177,13 @@ export default [
                 "rate4": null,
                 "output": 1,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
             }
         ]
     },
     {
         "part": "nuclear pasta",
+        "sinkPoints": 543424,
         "recipes":[
             {
                 "part": "nuclear pasta",
@@ -189,12 +197,13 @@ export default [
                 "rate4": null,
                 "output": 0.5,
                 "power": 1500,
-                "building": "particle accelerator"
+                "building": "particle accelerator",
             }
         ]
     },
     {
         "part": "thermal propulsion rocket",
+        "sinkPoints": 732956,
         "recipes":[
             {
                 "part": "thermal propulsion rocket",
@@ -208,7 +217,7 @@ export default [
                 "rate4": 1,
                 "output": 1,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
             }
         ]
     }

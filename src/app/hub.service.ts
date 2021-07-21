@@ -120,6 +120,7 @@ export class HubService {
       
       while(workingArray.length){ 
         let currentRecipe = workingArray[0];
+
         workingArray.shift();
 
         partsArray.forEach(part => {
@@ -131,6 +132,10 @@ export class HubService {
             }
 
             part.demand += currentRecipe.quantity;
+
+            if(currentRecipe.forSink && part.sinkPoints){
+              part.totalSinkPoints = part.sinkPoints * part.demand;
+            }
 
             part.recipes.forEach(recipe => {
               recipe.demand = part.demand*recipe.ratio;
