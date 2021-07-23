@@ -171,11 +171,11 @@ export class HubService {
                 });
               }
 
-              if(recipe.byProduct){
-                workingArray.push({
-                  part: recipe.byProduct,
-                  quantity: recipe.output2*recipe.buildings*-1
-                });
+              if(recipe.byProduct && recipe.byProduct !== 'heavy oil residue'){
+                  workingArray.push({
+                    part: recipe.byProduct,
+                    quantity: recipe.output2*recipe.buildings*-1
+                  });
               }
             });
           }

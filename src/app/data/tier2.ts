@@ -404,6 +404,18 @@ export default [
         "part": "polymer resin",
         "recipes":[
             {
+                "part": "HoR polymer resin",
+                "input1": "crude oil",
+                "rate1": 30,
+                "input2": null,
+                "rate2": null,
+                "output": 20,
+                "byProduct": "heavy oil residue",
+                "output2": 40,
+                "power": 30,
+                "building": "refinery"
+            },
+            {
                 "part": "polymer resin",
                 "input1": "crude oil",
                 "rate1": 60,
