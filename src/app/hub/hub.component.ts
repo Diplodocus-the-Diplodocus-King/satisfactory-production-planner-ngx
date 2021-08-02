@@ -148,7 +148,7 @@ export class HubComponent implements OnInit {
   onSubmit(){
     this.result = this.hubService.calcDemand(this.production, this.parts);
 
-    const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'sulphur', 'uranium', 'water'];
+    const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'bauxite', 'sulphur', 'uranium', 'water'];
     const resourceLimits = this.hubService.getResourceLimits();
 
     console.log('result', this.result);
