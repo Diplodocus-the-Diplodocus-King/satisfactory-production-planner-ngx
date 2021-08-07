@@ -109,13 +109,10 @@ export class HubService {
 
   calcRubber(partsArray: any[], currentRubberDemand: number): string {
     const currentPolymer = partsArray.filter(part => part.part === 'polymer resin');
-    const currentRubber = partsArray.filter(part => part.part === 'rubber');
     const polymerDemand = (40/20)*currentRubberDemand;
+
     let useRecipe: string;
-    console.log('rubber total demand', currentRubber[0].demand, 'current cycle rubber', currentRubberDemand)
-    console.log('polymer demand', polymerDemand, 'polymer byproduct', currentPolymer[0].demand)
     useRecipe = currentPolymer[0].demand + polymerDemand <= 0 ? 'residual rubber' : 'recycled rubber';
-    console.log('using:', useRecipe)
     return useRecipe;
   }
 
@@ -149,7 +146,6 @@ export class HubService {
         partsArray.forEach(part => {
           if(part.part === currentRecipe.part){
             // add sink points or power gen calcs in here as we'll lose the data from the production array here
-            console.log(part.part, 'part total demand', part.demand, 'part new demand', currentRecipe.quantity)
             
             if(!part.demand){
               part.demand = 0;
@@ -178,7 +174,6 @@ export class HubService {
             }
 
             part.recipes.filter(recipe => recipe.part === currentRecipe.recipe).forEach(recipe => {
-              console.log(recipe)
               recipe.demand = part.demand;
               recipe.buildings = recipe.demand / recipe.output;
               recipe.totalProduction = recipe.output*recipe.buildings;

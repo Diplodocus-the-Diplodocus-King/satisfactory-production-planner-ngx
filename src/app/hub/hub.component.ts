@@ -125,7 +125,6 @@ export class HubComponent implements OnInit {
       sink: this.forSink,
       power: this.forPower
     });
-    console.log('item in', this.production)
   }
 
   selectRecipe(event: Event, part: Part, recipe: any): void{
@@ -143,7 +142,6 @@ export class HubComponent implements OnInit {
   }
 
   removeItem(part: any){
-    console.log('this shouldnt be called')
     this.production = this.production.filter(item => item.part !== part.part);
   }
 
@@ -160,8 +158,6 @@ export class HubComponent implements OnInit {
 
     const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'bauxite', 'sulphur', 'nitrogen gas', 'uranium', 'water'];
     const resourceLimits = this.hubService.getResourceLimits();
-
-    console.log('result', this.result);
     
     this.result.forEach(part => {
       if(baseResources.includes(part.part)){
