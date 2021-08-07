@@ -15,7 +15,21 @@ export default [
                 "rate4": null,
                 "output": 2,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "plastic smart plating",
@@ -29,7 +43,21 @@ export default [
                 "rate4": null,
                 "output": 5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -49,7 +77,21 @@ export default [
                 "rate4": null,
                 "output": 2.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "high speed wiring",
@@ -63,7 +105,21 @@ export default [
                 "rate4": null,
                 "output": 7.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -83,7 +139,21 @@ export default [
                 "rate4": null,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "flexible framework",
@@ -97,7 +167,21 @@ export default [
                 "rate4": null,
                 "output": 7.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },

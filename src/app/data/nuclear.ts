@@ -16,7 +16,21 @@ export default [
                 "byProduct": "sulphuric acid",
                 "output2": 10,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "infused uranium cell",
@@ -30,7 +44,21 @@ export default [
                 "rate4": 75,
                 "output": 25,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -49,7 +77,21 @@ export default [
                 "rate4": null,
                 "output": 0.4,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "uranium fuel unit",
@@ -63,28 +105,27 @@ export default [
                 "rate4": 1.2,
                 "output": 0.6,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
     {
         "part": "uranium waste",
-        "recipes":[
-            {
-                "part": "uranium waste",
-                "input1": null,
-                "rate1": null,
-                "input2": null,
-                "rate2": null,
-                "input3": null,
-                "rate3": null,
-                "input4": null,
-                "rate4": null,
-                "output": 0,
-                "power": 0,
-                "building": "nuclear power plant"
-            }
-        ]
+        "recipes":[]
     },
     {
         "part": "non fissile uranium",
@@ -103,7 +144,21 @@ export default [
                 "byProduct": "water",
                 "output2": 15,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "fertile uranium",
@@ -119,7 +174,21 @@ export default [
                 "byProduct": "water",
                 "output2": 40,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -157,7 +226,21 @@ export default [
                 "rate4": null,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "instant plutonium cell",
@@ -171,7 +254,21 @@ export default [
                 "rate4": null,
                 "output": 10,
                 "power": 1500,
-                "building": "particle accelerator"
+                "building": "particle accelerator",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -191,7 +288,21 @@ export default [
                 "rate4": 2.5,
                 "output": 0.25,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "plutonium fuel unit",
@@ -205,26 +316,21 @@ export default [
                 "rate4": null,
                 "output": 0.5,
                 "power": 15,
-                "building": "assembler"
-            }
-        ]
-    },
-    {
-        "part": "uranium waste",
-        "recipes":[
-            {
-                "part": "plutonium waste",
-                "input1": null,
-                "rate1": null,
-                "input2": null,
-                "rate2": null,
-                "input3": null,
-                "rate3": null,
-                "input4": null,
-                "rate4": null,
-                "output": 0,
-                "power": 0,
-                "building": "nuclear power plant"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     }

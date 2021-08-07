@@ -107,12 +107,24 @@ export class HubService {
     return selectedRecipes;
   }
 
-  public calcDemand(production: any[], parts: Part[]){
+  calcRubber(partsArray: any[], currentRubberDemand: number): string {
+    const currentPolymer = partsArray.filter(part => part.part === 'polymer resin');
+    const currentRubber = partsArray.filter(part => part.part === 'rubber');
+    const polymerDemand = (40/20)*currentRubberDemand;
+    let useRecipe: string;
+    console.log('rubber total demand', currentRubber[0].demand, 'current cycle rubber', currentRubberDemand)
+    console.log('polymer demand', polymerDemand, 'polymer byproduct', currentPolymer[0].demand)
+    useRecipe = currentPolymer[0].demand + polymerDemand <= 0 ? 'residual rubber' : 'recycled rubber';
+    console.log('using:', useRecipe)
+    return useRecipe;
+  }
 
-    const selectedRecipes = this.filterRecipes(parts);
-    console.log(production)
+  public calcDemand(production: any[]){
+
+    // const selectedRecipes = this.filterRecipes(parts);
+
     let productionArray = [...production];
-    let partsArray = [...selectedRecipes];
+    let partsArray = [...this.allParts];
 
     while(productionArray.length){
       let workingArray = [productionArray[0]];
@@ -123,22 +135,51 @@ export class HubService {
 
         workingArray.shift();
 
+        if(currentRecipe.part === 'rubber' && workingArray.length >= 1){
+          workingArray.forEach((part, index) => {
+            if(part.part === 'rubber'){
+              currentRecipe.quantity += part.quantity;
+              workingArray.splice(index, 1);
+            }
+          })
+          workingArray.push(currentRecipe);
+          continue;
+        }
+
         partsArray.forEach(part => {
           if(part.part === currentRecipe.part){
             // add sink points or power gen calcs in here as we'll lose the data from the production array here
-
+            console.log(part.part, 'part total demand', part.demand, 'part new demand', currentRecipe.quantity)
+            
             if(!part.demand){
               part.demand = 0;
             }
 
             part.demand += currentRecipe.quantity;
 
-            if(currentRecipe.forSink && part.sinkPoints){
-              part.totalSinkPoints = part.sinkPoints * part.demand;
+            // if(currentRecipe.forSink && part.sinkPoints){
+            //   part.totalSinkPoints = part.sinkPoints * part.demand;
+            // }
+
+            if(part.part === 'rubber'){
+              currentRecipe.recipe = this.calcRubber(partsArray, currentRecipe.quantity);
+            } else if(!currentRecipe.recipe && part.recipes.length > 1){
+              let mostEfficient: any[] = [];
+              for(let i=0; i<part.recipes.length; i++){
+                if(!mostEfficient.length){
+                  mostEfficient = [part.recipes[i].part, part.recipes[i].weightedCost];
+                } else if (mostEfficient[1] > part.recipes[i].weightedCost){
+                  mostEfficient = [part.recipes[i].part, part.recipes[i].weightedCost];
+                }
+              }
+              currentRecipe.recipe = mostEfficient[0];
+            } else if (part.recipes.length === 1){
+              currentRecipe.recipe = part.recipes[0].part;
             }
 
-            part.recipes.forEach(recipe => {
-              recipe.demand = part.demand*recipe.ratio;
+            part.recipes.filter(recipe => recipe.part === currentRecipe.recipe).forEach(recipe => {
+              console.log(recipe)
+              recipe.demand = part.demand;
               recipe.buildings = recipe.demand / recipe.output;
               recipe.totalProduction = recipe.output*recipe.buildings;
               recipe.totalPower = recipe.buildings*recipe.power;
@@ -146,35 +187,35 @@ export class HubService {
               if(recipe.input1){
                 workingArray.push({
                   part: recipe.input1,
-                  quantity: recipe.rate1*recipe.buildings
+                  quantity: recipe.rate1*(currentRecipe.quantity / recipe.output),
                 });
               }
 
               if(recipe.input2){
                 workingArray.push({
                   part: recipe.input2,
-                  quantity: recipe.rate2*recipe.buildings
+                  quantity: recipe.rate2*(currentRecipe.quantity / recipe.output),
                 });
               }
 
               if(recipe.input3){
                 workingArray.push({
                   part: recipe.input3,
-                  quantity: recipe.rate3*recipe.buildings
+                  quantity: recipe.rate3*(currentRecipe.quantity / recipe.output),            
                 });
               }
 
               if(recipe.input4){
                 workingArray.push({
                   part: recipe.input4,
-                  quantity: recipe.rate4*recipe.buildings
+                  quantity: recipe.rate4*(currentRecipe.quantity / recipe.output), 
                 });
               }
 
-              if(recipe.byProduct && recipe.byProduct !== 'heavy oil residue'){
+              if(recipe.byProduct){
                 workingArray.push({
                   part: recipe.byProduct,
-                  quantity: recipe.output2*recipe.buildings*-1
+                  quantity: recipe.output2*(currentRecipe.quantity / recipe.output)*-1
                 });
               }
             });

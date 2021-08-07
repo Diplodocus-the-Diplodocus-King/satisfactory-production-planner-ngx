@@ -15,7 +15,7 @@ export default {
         limit: 28860,
         weight: 2.439,
     },
-    nitrogen: {
+    nitrogen_gas: {
         limit: 12000,
         weight: 5.865,
     },
@@ -47,4 +47,8 @@ export default {
         limit: 2100,
         weight: 33.514,
     },
+    water: {
+        limit: Infinity,
+        weight: 0
+    }
 }

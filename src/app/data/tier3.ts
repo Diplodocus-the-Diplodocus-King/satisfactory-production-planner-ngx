@@ -14,7 +14,21 @@ export default [
                 "rate4": 200,
                 "output": 2,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "heavy flexible frame",
@@ -28,7 +42,21 @@ export default [
                 "rate4": 390,
                 "output": 3.75,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "heavy encased frame",
@@ -42,7 +70,21 @@ export default [
                 "rate4": 20.625,
                 "output": 2.8125,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -61,7 +103,21 @@ export default [
                 "rate4": 130,
                 "output": 2.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "crystal computer",
@@ -75,7 +131,21 @@ export default [
                 "rate4": null,
                 "output": 2.8125,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "caterium computer",
@@ -89,7 +159,21 @@ export default [
                 "rate4": null,
                 "output": 3.75,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -108,7 +192,21 @@ export default [
                 "rate4": null,
                 "output": 1,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "insulated crystal oscillator",
@@ -122,7 +220,21 @@ export default [
                 "rate4": null,
                 "output": 1.875,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -141,7 +253,21 @@ export default [
                 "rate4": null,
                 "output": 3.75,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "silicone high speed connector",
@@ -155,7 +281,21 @@ export default [
                 "rate4": null,
                 "output": 3,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -174,7 +314,21 @@ export default [
                 "rate4": 3.75,
                 "output": 1.875,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "turbo electric motor",
@@ -188,7 +342,21 @@ export default [
                 "rate4": 4.6875,
                 "output": 2.8125,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "turbo pressure motor",
@@ -202,7 +370,21 @@ export default [
                 "rate4": 45,
                 "output": 3.75,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -221,7 +403,21 @@ export default [
                 "rate4": null,
                 "output": 2.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "radio control system",
@@ -235,7 +431,21 @@ export default [
                 "rate4": 45,
                 "output": 4.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "radio connection unit",
@@ -249,7 +459,21 @@ export default [
                 "rate4": null,
                 "output": 3.75,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -268,7 +492,21 @@ export default [
                 "rate4": 52.5,
                 "output": 1.875,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "OC super computer",
@@ -282,7 +520,21 @@ export default [
                 "rate4": null,
                 "output": 3,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "super state computer",
@@ -296,7 +548,21 @@ export default [
                 "rate4": 54,
                 "output": 2.4,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -315,7 +581,21 @@ export default [
                 "byProduct": "water",
                 "output2": 30,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "classic battery",
@@ -329,7 +609,21 @@ export default [
                 "rate4": 60,
                 "output": 30,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -348,7 +642,21 @@ export default [
                 "rate4": 30,
                 "output": 6,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "cooling device",
@@ -362,7 +670,21 @@ export default [
                 "rate4": null,
                 "output": 3.75,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -381,7 +703,21 @@ export default [
                 "rate4": null,
                 "output": 4,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "electromagnetic connection rod",
@@ -395,7 +731,21 @@ export default [
                 "rate4": null,
                 "output": 8,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -414,7 +764,21 @@ export default [
                 "rate4": null,
                 "output": 1.5,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "heat fused frame",
@@ -428,7 +792,21 @@ export default [
                 "rate4": 30,
                 "output": 3,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -466,7 +844,21 @@ export default [
                 "rate4": 15,
                 "output": 7.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "crystal beacon",
@@ -480,7 +872,21 @@ export default [
                 "rate4": null,
                 "output": 10,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     }

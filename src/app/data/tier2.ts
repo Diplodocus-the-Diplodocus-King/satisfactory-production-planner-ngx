@@ -10,7 +10,21 @@ export default [
                 "rate2": 60,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "adhered iron plate",
@@ -20,7 +34,21 @@ export default [
                 "rate2": 3.75,
                 "output": 3.75,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "bolted iron plate",
@@ -30,7 +58,21 @@ export default [
                 "rate2": 250,
                 "output": 15,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "stitched iron plate",
@@ -40,7 +82,21 @@ export default [
                 "rate2": 37.5,
                 "output": 5.625,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -55,7 +111,21 @@ export default [
                 "rate2": 100,
                 "output": 4,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "copper rotor",
@@ -65,7 +135,21 @@ export default [
                 "rate2": 195,
                 "output": 11.25,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "steel rotor",
@@ -75,7 +159,21 @@ export default [
                 "rate2": 30,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -90,7 +188,21 @@ export default [
                 "rate2": 12,
                 "output": 2,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "bolted frame",
@@ -100,7 +212,21 @@ export default [
                 "rate2": 140,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "steeled frame",
@@ -110,7 +236,21 @@ export default [
                 "rate2": 10,
                 "output": 3,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -125,7 +265,21 @@ export default [
                 "rate2": 40,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "quickwire stator",
@@ -135,7 +289,21 @@ export default [
                 "rate2": 60,
                 "output": 8,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -150,7 +318,21 @@ export default [
                 "rate2": 30,
                 "output": 6,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "encased industrial pipe",
@@ -160,7 +342,21 @@ export default [
                 "rate2": 20,
                 "output": 4,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -175,7 +371,21 @@ export default [
                 "rate2": 10,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "rigour motor",
@@ -189,7 +399,21 @@ export default [
                 "rate4": null,
                 "output": 7.5,
                 "power": 55,
-                "building": "manufacturer"
+                "building": "manufacturer",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "electric motor",
@@ -199,7 +423,21 @@ export default [
                 "rate2": 3.75,
                 "output": 7.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -214,7 +452,21 @@ export default [
                 "rate2": 30,
                 "output": 7.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "electrode board",
@@ -224,7 +476,21 @@ export default [
                 "rate2": 45,
                 "output": 5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "silicone board",
@@ -234,7 +500,21 @@ export default [
                 "rate2": 27.5,
                 "output": 12.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "caterium board",
@@ -244,7 +524,21 @@ export default [
                 "rate2": 12.5,
                 "output": 8.75,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]    
     },
@@ -261,7 +555,21 @@ export default [
                 "byProduct": "heavy oil residue",
                 "output2": 10,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 100,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 100,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "residual plastic",
@@ -271,7 +579,21 @@ export default [
                 "rate2": 20,
                 "output": 20,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 100,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 100,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "recycled plastic",
@@ -281,7 +603,21 @@ export default [
                 "rate2": 30,
                 "output": 60,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 1,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 1,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -335,7 +671,21 @@ export default [
                 "byProduct": "polymer resin",
                 "output2": 30,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 9.023,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 1.5,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "residual fuel",
@@ -345,19 +695,21 @@ export default [
                 "rate2": null,
                 "output": 40,
                 "power": 30,
-                "building": "refinery"
-            },
-            {
-                "part": "unpackaged fuel",
-                "input1": "packaged fuel",
-                "rate1": 60,
-                "input2": null,
-                "rate2": null,
-                "output": 60,
-                "byProduct": null,
-                "output2": null,
-                "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 6.767,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 1.125,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "diluted fuel",
@@ -367,7 +719,21 @@ export default [
                 "rate2": 100,
                 "output": 100,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 2.256,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0.375,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -385,49 +751,12 @@ export default [
                 "output2": 20,
                 "power": 30,
                 "building": "refinery"
-            },
-            {
-                "part": "unpackaged heavy oil residue",
-                "input1": "packaged heavy oil residue",
-                "rate1": 20,
-                "input2": null,
-                "rate2": null,
-                "output": 20,
-                "byProduct": null,
-                "output2": null,
-                "power": 30,
-                "building": "refinery"
             }
         ]
     },
     {
         "part": "polymer resin",
-        "recipes":[
-            {
-                "part": "HoR polymer resin",
-                "input1": "crude oil",
-                "rate1": 30,
-                "input2": null,
-                "rate2": null,
-                "output": 20,
-                "byProduct": "heavy oil residue",
-                "output2": 40,
-                "power": 30,
-                "building": "refinery"
-            },
-            {
-                "part": "polymer resin",
-                "input1": "crude oil",
-                "rate1": 60,
-                "input2": null,
-                "rate2": null,
-                "output": 130,
-                "byProduct": "heavy oil residue",
-                "output2": 20,
-                "power": 30,
-                "building": "refinery"
-            }
-        ]
+        "recipes":[]
     },
     {
         "part": "petroleum coke",
@@ -455,7 +784,21 @@ export default [
                 "rate2": null,
                 "output": 60,
                 "power": 4,
-                "building": "constructor"
+                "building": "constructor",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "steel canister",
@@ -465,7 +808,21 @@ export default [
                 "rate2": null,
                 "output": 40,
                 "power": 4,
-                "building": "constructor"
+                "building": "constructor",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "coated iron canister",
@@ -475,7 +832,21 @@ export default [
                 "rate2": 15,
                 "output": 60,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -489,16 +860,6 @@ export default [
                 "input2": null,
                 "rate2": null,
                 "output": 40,
-                "power": 30,
-                "building": "refinery"
-            },
-            {
-                "part": "diluted packaged fuel",
-                "input1": "heavy oil residue",
-                "rate1": 30,
-                "input2": "packaged water",
-                "rate2": 60,
-                "output": 60,
                 "power": 30,
                 "building": "refinery"
             }
@@ -545,7 +906,21 @@ export default [
                 "rate2": 15,
                 "output": 18.75,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "turbo heavy fuel",
@@ -555,19 +930,21 @@ export default [
                 "rate2": 30,
                 "output": 30,
                 "power": 30,
-                "building": "refinery"
-            },
-            {
-                "part": "unpackaged turbo fuel",
-                "input1": "packaged turbo fuel",
-                "rate1": 20,
-                "input2": null,
-                "rate2": null,
-                "output": 20,
-                "byProduct": null,
-                "output2": null,
-                "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "turbo blend fuel",
@@ -581,7 +958,21 @@ export default [
                 "rate4": 22.5,
                 "output": 45,
                 "power": 75,
-                "building": "blender"
+                "building": "blender",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
        ]
     },
@@ -626,7 +1017,21 @@ export default [
                 "rate2": 75,
                 "output": 60,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "pure aluminium ingot",
@@ -636,7 +1041,21 @@ export default [
                 "rate2": null,
                 "output": 30,
                 "power": 4,
-                "building": "smelter"
+                "building": "smelter",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -666,7 +1085,21 @@ export default [
                 "rate2": null,
                 "output": 60,
                 "power": 4,
-                "building": "constructor"
+                "building": "constructor",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "alternate aluminium casing",
@@ -676,7 +1109,21 @@ export default [
                 "rate2": 75,
                 "output": 112.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -706,7 +1153,21 @@ export default [
                 "rate2": 22.5,
                 "output": 7.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "heat exchanger",
@@ -716,7 +1177,21 @@ export default [
                 "rate2": 30,
                 "output": 10,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 0,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     }

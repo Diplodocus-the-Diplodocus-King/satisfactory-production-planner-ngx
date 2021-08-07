@@ -10,7 +10,21 @@ export default [
                 "rate2": null,
                 "output": 30,
                 "power": 4,
-                "building": "smelter"
+                "building": "smelter",
+                "weightedCost": 1,
+                "resourceCost": {
+                    "iron ore": 1,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "pure iron ingot",
@@ -20,7 +34,21 @@ export default [
                 "rate2": 20,
                 "output": 65,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 0.538,
+                "resourceCost": {
+                    "iron ore": 0.538,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "iron alloy ingot",
@@ -30,7 +58,21 @@ export default [
                 "rate2": 20,
                 "output": 50,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 1.375,
+                "resourceCost": {
+                    "iron ore": 0.4,
+                    "copper ore": 0.4,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -45,7 +87,21 @@ export default [
                 "rate2": null,
                 "output": 30,
                 "power": 4,
-                "building": "smelter"
+                "building": "smelter",
+                "weightedCost": 2.439,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 1,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "pure copper ingot",
@@ -55,7 +111,21 @@ export default [
                 "rate2": 10,
                 "output": 37.5,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 0.9756,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0.4,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "copper alloy ingot",
@@ -65,7 +135,21 @@ export default [
                 "rate2": 25,
                 "output": 100,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 1.4695,
+                "resourceCost": {
+                    "iron ore": 0.25,
+                    "copper ore": 0.5,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -80,7 +164,21 @@ export default [
                 "rate2": 45,
                 "output": 45,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 3.278,
+                "resourceCost": {
+                    "iron ore": 1,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 1,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "coke steel ingot",
@@ -90,7 +188,21 @@ export default [
                 "rate2": 75,
                 "output": 100,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 1.8778125,
+                "resourceCost": {
+                    "iron ore": 0.75,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0.188,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "compacted steel ingot",
@@ -100,7 +212,21 @@ export default [
                 "rate2": 11.25,
                 "output": 37.5,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 4.3701,
+                "resourceCost": {
+                    "iron ore": 0.6,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0.3,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0.3,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "solid steel ingot",
@@ -110,7 +236,21 @@ export default [
                 "rate2": 40,
                 "output": 60,
                 "power": 16,
-                "building": "foundry"
+                "building": "foundry",
+                "weightedCost": 1.877641,
+                "resourceCost": {
+                    "iron ore": 0.359,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0.667,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -125,7 +265,21 @@ export default [
                 "rate2": null,
                 "output": 15,
                 "power": 4,
-                "building": "smelter"
+                "building": "smelter",
+                "weightedCost": 19.125,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 3,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "pure caterium ingot",
@@ -135,7 +289,21 @@ export default [
                 "rate2": 24,
                 "output": 12,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 12.75,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 2,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -150,7 +318,21 @@ export default [
                 "rate2": null,
                 "output": 22.5,
                 "power": 4,
-                "building": "constructor"
+                "building": "constructor",
+                "weightedCost": 11.1717,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 1.667,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "pure quartz crystal",
@@ -160,7 +342,21 @@ export default [
                 "rate2": 37.5,
                 "output": 52.5,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 8.6181,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 1.286,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -175,7 +371,21 @@ export default [
                 "rate2": null,
                 "output": 37.5,
                 "power": 4,
-                "building": "constructor"
+                "building": "constructor",
+                "weightedCost": 4.0218,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0.6,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "cheap silica",
@@ -185,7 +395,21 @@ export default [
                 "rate2": 18.75,
                 "output": 26.25,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 3.8234,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0.714,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0.429,
+                    "bauxite": 0,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -200,7 +424,21 @@ export default [
                 "rate2": 15,
                 "output": 7.5,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 22.856,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 1,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 2,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "gun powder",
@@ -210,7 +448,21 @@ export default [
                 "rate2": 7.5,
                 "output": 15,
                 "power": 15,
-                "building": "assembler"
+                "building": "assembler",
+                "weightedCost": 8.28625,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0.25,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0,
+                    "sulphur": 0.75,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -242,19 +494,21 @@ export default [
                 "byProduct": "silica",
                 "output2": 50,
                 "power": 30,
-                "building": "refinery"
-            },
-            {
-                "part": "unpackaged alumina solution",
-                "input1": "packaged alumina solution",
-                "rate1": 120,
-                "input2": null,
-                "rate2": null,
-                "output": 120,
-                "byProduct": "empty canister",
-                "output2": 120,
-                "power": 30,
-                "building": "packager"
+                "building": "refinery",
+                "weightedCost": 5.6029,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": -0.298,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": -0.179,
+                    "bauxite": 1,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             },
             {
                 "part": "sloppy alumina",
@@ -264,7 +518,21 @@ export default [
                 "rate2": 200,
                 "output": 240,
                 "power": 30,
-                "building": "refinery"
+                "building": "refinery",
+                "weightedCost": 5.9967,
+                "resourceCost": {
+                    "iron ore": 0,
+                    "copper ore": 0,
+                    "limestone": 0,
+                    "coal": 0,
+                    "crude oil": 0,
+                    "caterium ore": 0,
+                    "raw quartz": 0,
+                    "bauxite": 0.833,
+                    "sulphur": 0,
+                    "nitrogen": 0,
+                    "uranium": 0,
+                }
             }
         ]
     },
@@ -295,18 +563,6 @@ export default [
                 "output": 100,
                 "power": 30,
                 "building": "refinery"
-            },
-            {
-                "part": "unpackaged sulphuric acid",
-                "input1": "packaged sulphuric acid",
-                "rate1": 60,
-                "input2": null,
-                "rate2": null,
-                "output": 60,
-                "byProduct": "empty canister",
-                "output2": 60,
-                "power": 10,
-                "building": "packager"
             }
         ]
     }, 

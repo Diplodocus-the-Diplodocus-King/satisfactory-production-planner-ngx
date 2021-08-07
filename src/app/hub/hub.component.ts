@@ -12,6 +12,8 @@ export class HubComponent implements OnInit {
 
   productionItemForm: FormGroup;
   item: string = '';
+  recipe: string;
+  recipes: string[];
   quantity: number = 0;
   toMaximise: boolean = false;
   forSink: boolean = false;
@@ -34,7 +36,8 @@ export class HubComponent implements OnInit {
     bauxite: 0,
     raw_quartz: 0,
     sulphur: 0,
-    uranium: 0
+    uranium: 0,
+    weightedCost: 0
   }
 
   constructor(
@@ -43,6 +46,7 @@ export class HubComponent implements OnInit {
     ) {
       this.productionItemForm = this.fb.group({
         item: [this.item, Validators.required],
+        recipe: [this.recipe, Validators.required],
         quantity: [this.quantity, Validators.required],
         toMaximise: [this.toMaximise],
         forSink: [this.forSink],
@@ -68,9 +72,13 @@ export class HubComponent implements OnInit {
 
   }
 
-  getRecipes(part: string): any[] {
-    const recipes: any[] = this.hubService.getRecipes(part);
-    return recipes;
+  getRecipes(part?: string): void {
+    if(!part){
+      part = this.productionItemForm.controls.item.value;
+    }
+
+    this.recipes = this.hubService.getRecipes(part).map(recipe => recipe.part)
+    return;
   }
 
   setMaximise(){
@@ -99,6 +107,7 @@ export class HubComponent implements OnInit {
 
   addItem(){
     this.item = this.productionItemForm.controls.item.value;
+    this.recipe = this.productionItemForm.controls.recipe.value;
     this.quantity = this.productionItemForm.controls.quantity.value;
     this.toMaximise = this.productionItemForm.controls.toMaximise.value;
     this.forSink = this.productionItemForm.controls.forSink.value;
@@ -110,12 +119,13 @@ export class HubComponent implements OnInit {
 
     this.production.push({
       part: this.item,
+      recipe: this.recipe,
       quantity: this.quantity,
       maximise: this.toMaximise,
       sink: this.forSink,
       power: this.forPower
     });
-    console.log(this.production)
+    console.log('item in', this.production)
   }
 
   selectRecipe(event: Event, part: Part, recipe: any): void{
@@ -146,9 +156,9 @@ export class HubComponent implements OnInit {
   }
 
   onSubmit(){
-    this.result = this.hubService.calcDemand(this.production, this.parts);
+    this.result = this.hubService.calcDemand(this.production);
 
-    const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'bauxite', 'sulphur', 'uranium', 'water'];
+    const baseResources = ['iron ore', 'copper ore', 'limestone', 'coal', 'crude oil', 'caterium ore', 'raw quartz', 'bauxite', 'sulphur', 'nitrogen gas', 'uranium', 'water'];
     const resourceLimits = this.hubService.getResourceLimits();
 
     console.log('result', this.result);
@@ -156,9 +166,13 @@ export class HubComponent implements OnInit {
     this.result.forEach(part => {
       if(baseResources.includes(part.part)){
         const key: string = part.part.replace(/ /g, '_');
-        console.log(key)
-        this.resourceUsage[key] = part.demand;
-        console.log(this.resourceUsage)
+
+        if(!part.demand){
+          part.demand = 0;
+        }
+
+        this.resourceUsage[key] = Math.round(part.demand * 1000) / 1000;
+        this.resourceUsage.weightedCost += part.demand * resourceLimits[key].weight;
       }
     });
     return;
